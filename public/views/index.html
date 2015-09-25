@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eat in!</title>
+</head>
+<body>
+  <h1>Eat.ly</h1>
+  <ul id="list-of-food">
+    <li><button data-id="/foods" id="foods">Food list</button></li>
+    <li><button data-id="/foods/2" id="foods-edit">show Dish</button></li>
+    <li><button data-id="/foods" id="foods-delete">Delete Dish</button></li>
+  </ul>
+  <form action="/foods" method="post">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="yumminess" placeholder="yumminess">
+    <input type="submit" value="New Dish">
+  </form>
+  <div id="food-list"></div>
+</body>
+</html>
